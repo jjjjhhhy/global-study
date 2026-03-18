@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>사전 준비 · 글로벌 혁신 필드 스터디</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="hero hero-compact">
+    <div class="hero-inner">
+        <a href="index.html" class="back-link">← 메인으로 돌아가기</a>
+        <span class="hero-badge">사전 준비</span>
+        <h1>출발 전 필수 체크리스트</h1>
+        <p class="hero-sub">모든 항목을 확인하고 체크해 주세요</p>
+    </div>
+</header>
+<main class="container">
+    <!-- 체크리스트 -->
+    <section class="card" id="checklist">
+        <div class="card-header"><span class="card-icon">✅</span><h2>필수 체크리스트</h2></div>
+        <div class="progress-wrap">
+            <div class="progress-label" id="progressLabel">0 / 4 완료</div>
+            <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+        <div class="checklist-card" onclick="toggleCheck(this)">
+            <div class="check-box"><span class="check-mark">✓</span></div>
+            <div class="check-text">
+                <strong>Alipay 앱 설치 및 카드 등록</strong>
+                <p>중국은 현금·신용카드 사용이 어렵습니다. 한국에서 미리 설치 후 법인카드 또는 개인카드 연결.</p>
+            </div>
+        </div>
+        <div class="checklist-card" onclick="toggleCheck(this)">
+            <div class="check-box"><span class="check-mark">✓</span></div>
+            <div class="check-text">
+                <strong>해외 데이터 로밍 신청</strong>
+                <p>U+ 앱에서 개별 신청. 중국에서 Wi-Fi 사용 시 카카오톡 접속 불가 — 로밍 필수.</p>
+            </div>
+        </div>
+        <div class="checklist-card" onclick="toggleCheck(this)">
+            <div class="check-box"><span class="check-mark">✓</span></div>
+            <div class="check-text">
+                <strong>LGenie Talk 앱 설치</strong>
+                <p>모바일 EP 하단 → LGenie Talk 다운로드. 현지 기업 탐방 시 통역에 활용.</p>
+            </div>
+        </div>
+        <div class="checklist-card" onclick="toggleCheck(this)">
+            <div class="check-box"><span class="check-mark">✓</span></div>
+            <div class="check-text">
+                <strong>중국 출장자 필수 과정 수강</strong>
+                <p>EP → HR → Learning → 필수과정 → '중국 출장자 유의사항' 과정 시작 (약 5분).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 날씨 -->
+    <section class="card" id="weather">
+        <div class="card-header"><span class="card-icon">🌤️</span><h2>심천 날씨 (4월 하순)</h2></div>
+        <div class="card-group">
+            <div class="callout callout-warn">날씨가 매우 <strong>덥고 습합니다.</strong> 스콜성 비가 자주 내리며, 우산은 호텔에서 제공됩니다.</div>
+            <div class="weather-row">
+                <div class="weather-day"><div class="weather-date">4/23 (목)</div><div class="weather-icon">⛈</div><div class="weather-temp">32° / 27°</div><div class="weather-sub">소나기</div></div>
+                <div class="weather-day"><div class="weather-date">4/24 (금)</div><div class="weather-icon">⛈</div><div class="weather-temp">31° / 26°</div><div class="weather-sub">소나기</div></div>
+                <div class="weather-day"><div class="weather-date">4/25 (토)</div><div class="weather-icon">⛈</div><div class="weather-temp">30° / 26°</div><div class="weather-sub">소나기</div></div>
+                <div class="weather-day"><div class="weather-date">4/26 (일)</div><div class="weather-icon">🌧</div><div class="weather-temp">30° / 26°</div><div class="weather-sub">비</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 개인 준비물 -->
+    <section class="card" id="items">
+        <div class="card-header"><span class="card-icon">👔</span><h2>개인 준비물</h2></div>
+        <div class="card-group">
+            <table class="info-table">
+                <tr><th>항목</th><th>안내</th></tr>
+                <tr><td>의류</td><td>얇고 편안한 여름 옷. 에어컨 대비 긴팔 1벌 추천. 비즈니스 캐주얼.</td></tr>
+                <tr><td>신발</td><td>이동이 많으므로 편한 신발 필수. 너무 캐주얼하지 않은 것 권장.</td></tr>
+                <tr><td>우산</td><td>호텔 내 비치 — 별도 준비 불필요</td></tr>
+                <tr><td>선크림/모자</td><td>야외 이동 시 자외선 차단 용품 권장</td></tr>
+                <tr><td>비상약</td><td>감기약, 소화제, 지사제, 두통약, 개인 상비약</td></tr>
+                <tr><td>호텔 제공</td><td>바디워시 / 샴푸 / 컨디셔너 / 치약 / 칫솔 / 드라이기</td></tr>
+                <tr><td>전압</td><td>220V 50Hz — 한국과 동일, 어댑터 불필요</td></tr>
+                <tr><td>여권</td><td>도착일 기준 유효기한 <strong>6개월 이상</strong> 남은 여권 (관광 무비자 입국)</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- 결제 -->
+    <section class="card" id="payment">
+        <div class="card-header"><span class="card-icon">💳</span><h2>결제 · 환율</h2></div>
+        <div class="card-group">
+            <div class="callout callout-red">중국은 현금을 거의 사용하지 않으며, 일반 신용카드도 사용이 불가한 곳이 많습니다.</div>
+            <div class="info-grid-3">
+                <div class="info-card"><div class="info-card-label">환율 (CNY → KRW)</div><div class="info-card-value">약 210원</div><div class="info-card-sub">1 위안 ≈ 210원 (2026.3 기준)</div></div>
+                <div class="info-card"><div class="info-card-label">예시 (10 CNY)</div><div class="info-card-value">≈ 2,100원</div></div>
+                <div class="info-card"><div class="info-card-label">추천 결제 수단</div><div class="info-card-value" style="font-size:1rem">Alipay</div><div class="info-card-sub">카카오페이·토스페이도 가능</div></div>
+            </div>
+            <a href="alipay-guide.html" class="btn btn-small">Alipay 연결 가이드 →</a>
+        </div>
+    </section>
+
+    <!-- 수하물 -->
+    <section class="card" id="baggage">
+        <div class="card-header"><span class="card-icon">🧳</span><h2>수하물 안내</h2></div>
+        <div class="card-group">
+            <table class="info-table">
+                <tr><th>구분</th><th>규격</th><th>주요 주의사항</th></tr>
+                <tr><td>위탁 수하물</td><td>삼변의 합 158cm 이내<br>2개/각 32kg</td><td>칼·도검류, 골프채 불가. 100ml 초과 액체류 불가.<br><strong style="color:#A50034">노트북·태블릿·보조배터리 위탁 불가 (휴대만 가능)</strong></td></tr>
+                <tr><td>휴대 수하물</td><td>2개/18kg 이내<br>115cm 이내</td><td>액체류 100ml 이하 용기, 전체 1L 이하</td></tr>
+                <tr><td>보조배터리</td><td>기내선반 보관 금지</td><td>직접 소지 또는 좌석 앞 주머니. 지퍼백 1개씩 분리, 단자 절연테이프</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- 호텔 정보 -->
+    <section class="card" id="hotel">
+        <div class="card-header"><span class="card-icon">🏨</span><h2>호텔 정보</h2></div>
+        <div class="card-group">
+            <h3 style="font-size:1.05rem;margin-bottom:4px">더 랭함 호텔 선전</h3>
+            <p class="note" style="margin-bottom:12px">The Langham Hotel, Shenzhen</p>
+            <table class="info-table">
+                <tr><td>주소</td><td>7888 Shennan Blvd, Futian District, Shenzhen</td></tr>
+                <tr><td>연락처</td><td>(+86) 755 8828 9888</td></tr>
+                <tr><td>체크인/아웃</td><td>15:00 / 12:00</td></tr>
+                <tr><td>객실 수</td><td>352객실</td></tr>
+                <tr><td>부대시설</td><td>수영장, Chuan 스파, 피트니스, 비즈니스 센터, 레스토랑 5개, 바</td></tr>
+            </table>
+            <p style="font-size:.88rem;color:var(--text-secondary);margin-top:10px;line-height:1.6">심천 복전구 중심부, 지하철 Chegongmiao역(1·7·9·11호선) 인접. 미슐랭 중식당 T'ang Court 포함.</p>
+        </div>
+    </section>
+
+    <!-- 입국 신고서 -->
+    <section class="card" id="entry">
+        <div class="card-header"><span class="card-icon">🛂</span><h2>입국 신고서 작성 안내</h2></div>
+        <div class="card-group">
+            <div class="callout callout-info">중국 국가이민관리국(NIA) 공식 웹사이트에서 사전 작성 가능합니다.</div>
+            <table class="info-table">
+                <tr><td>여권 종류</td><td>일반 여권 (Ordinary Passport)</td></tr>
+                <tr><td>항공편</td><td>KE835</td></tr>
+                <tr><td>입국 도시</td><td>Shenzhen</td></tr>
+                <tr><td>비자 여부</td><td>NO (Visa-free Entry)</td></tr>
+                <tr><td>입국 목적</td><td>Sightseeing / Leisure</td></tr>
+                <tr><td>입국일</td><td>2026-04-23</td></tr>
+                <tr><td>중국 내 주소</td><td>7888 Shennan Blvd, Futian District, Shenzhen</td></tr>
+                <tr><td>출국일</td><td>2026-04-26</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- 공항 수속 -->
+    <section class="card" id="airport">
+        <div class="card-header"><span class="card-icon">✈️</span><h2>공항 수속 안내</h2></div>
+        <div class="card-group">
+            <table class="info-table">
+                <tr><th>시간</th><th>일정</th><th>안내</th></tr>
+                <tr><td>05:30~</td><td>탑승 수속</td><td>비즈니스: A카운터 / 일반: E·F카운터</td></tr>
+                <tr><td>07:00</td><td>출국장 입장</td><td>면세점 쇼핑 및 자유시간</td></tr>
+                <tr><td>08:15</td><td>이륙</td><td>KE835 인천 국제공항 출발</td></tr>
+                <tr><td>11:25</td><td>착륙</td><td>심천 국제공항 도착</td></tr>
+                <tr><td>12:15</td><td>미팅</td><td>"2026 Global Innovation Field Study" 미팅보드 대기</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <div style="text-align:center; padding: 8px 0 20px;">
+        <a href="index.html" class="btn btn-outline">← 메인 페이지로 돌아가기</a>
+    </div>
+</main>
+<footer class="footer"><p>글로벌 혁신 필드 스터디 · 참가 안내</p></footer>
+<script src="js/main.js"></script>
+<script>
+function toggleCheck(el){el.classList.toggle('done');updateProgress();}
+function updateProgress(){var a=document.querySelectorAll('.checklist-card'),d=document.querySelectorAll('.checklist-card.done'),p=(d.length/a.length)*100;document.getElementById('progressBar').style.width=p+'%';document.getElementById('progressLabel').textContent=d.length+' / '+a.length+' 완료';}
+</script>
+</body>
+</html>
