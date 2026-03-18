@@ -285,15 +285,20 @@ body {
 
 /* ===== Mission Page ===== */
 .mission-day-label {
-    padding: 7px 14px; font-size: .7rem; font-weight: 700; color: #fff;
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0; letter-spacing: .5px; margin-top: 14px;
+    padding: 5px 12px; font-size: .68rem; font-weight: 700; color: #fff;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0; letter-spacing: .5px; margin-top: 10px;
 }
+.mission-day-label:first-of-type { margin-top: 0; }
 .mission-check-list {
     border: 1px solid var(--border); border-top: none;
-    border-radius: 0 0 var(--radius-sm) var(--radius-sm); overflow: hidden; margin-bottom: 6px;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm); overflow: hidden; margin-bottom: 4px;
 }
-.mission-check-list .checklist-card { border: none; border-bottom: 1px solid var(--border); border-radius: 0; margin: 0; }
+.mission-check-list .checklist-card { border: none; border-bottom: 1px solid var(--border); border-radius: 0; margin: 0; padding: 8px 12px; gap: 8px; }
 .mission-check-list .checklist-card:last-child { border-bottom: none; }
+.mission-check-list .check-box { width: 18px; height: 18px; border-radius: 4px; }
+.mission-check-list .check-text { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.mission-check-list .check-text strong { font-size: .82rem; white-space: nowrap; margin-bottom: 0; }
+.mission-check-list .check-text p { font-size: .78rem; display: inline; margin: 0; }
 
 .mission-detail { padding: 14px 0; border-bottom: 1px solid var(--border); }
 .mission-detail:last-child { border-bottom: none; }
