@@ -191,7 +191,7 @@ body {
 }
 
 /* ===== Tags / Chips ===== */
-.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; justify-content: center; }
 .chip {
     background: var(--accent-light); color: var(--accent);
     padding: 4px 11px; border-radius: 20px;
